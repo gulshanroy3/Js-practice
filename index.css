@@ -1,0 +1,22 @@
+.practice-span-outside{
+    color:brown ;
+}
+#practice-span-outside-id{
+    color: crimson;
+}
+/* span{
+    color: red !important;
+} */
+.parent-div .practice-span-outside{
+    color: darkgreen;
+}
+/* inline id class tag parent child */
+.button-class{
+    background-color: blueviolet;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+}
+.for-input{
+    background-color: aqua;
+}
