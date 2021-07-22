@@ -1,44 +1,48 @@
 <html>
-    <head>
-        <title>practice</title>
-        <style>
-            .practice-span{
-                color: red;
-            }
-            /* span{
+
+<head>
+    <title>practice</title>
+    <style>
+        .practice-span {
+            color: red;
+        }
+
+        /* span{
                 color:red !important;
             } */
-        </style>
-      <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div>
-            <span style="color: blue;">This is inline</span>
-        </div>
-        <div>
-            <span class="practice-span">This is style in html file</span>
-        </div>
-        <div>
-            <span class="practice-span-outside">This is style in css using class file</span>
-        </div>
-        <div>
-            <span style="color: royalblue;" id="practice-span-outside-id" class="practice-span-outside">This is style in css using id file</span>
-        </div>
-        <div class="parent-div">
-            <span  class="practice-span-outside">This is style in css using tag</span>
-        </div>
-        <div>
-            <button class="button-class" id="button-js">This is button</button>
-        </div>
-        <input id='input-js' />
-        <!-- <button class="button-class">This is button1</button>
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <span style="color: blue;">This is inline</span>
+    </div>
+    <div>
+        <span class="practice-span">This is style in html file</span>
+    </div>
+    <div>
+        <span class="practice-span-outside">This is style in css using class file</span>
+    </div>
+    <div>
+        <span style="color: royalblue;" id="practice-span-outside-id" class="practice-span-outside">This is style in css
+            using id file</span>
+    </div>
+    <div class="parent-div">
+        <span class="practice-span-outside">This is style in css using tag</span>
+    </div>
+    <div>
+        <button class="button-class" id="button-js" onclick="buttonClick()">This is button</button>
+    </div>
+    <input type="text" id='input-js' oninput="onInputChange(this.value)" />
+    <!-- <button class="button-class">This is button1</button>
         <button class="button-class">This is button2</button>
         <button class="button-class">This is button3</button> -->
 
 
-        <table>
-            <thead>Table head</thead>
-           <tbody>  
+    <table>
+        <thead>Table head</thead>
+        <tbody>
             <tr>
                 <td>1</td>
                 <td>2</td>
@@ -49,25 +53,13 @@
                 <td>2</td>
                 <td>3</td>
             </tr>
-           </tbody>
-        </table>
-        <script>
-            let buttonJS=document.getElementById("button-js")
-            let inputJS=document.getElementById("input-js")
-                let i=1;
-            buttonJS.addEventListener('click',onbuttonClick)
-            inputJS.addEventListener('input',function(e){
-                console.log(e)
-                if(e.target.value==='suma') inputJS.className='for-input'
-            })
-            function onbuttonClick(e){
-                // console.log(e)
-                buttonJS.innerHTML='this is button'+i
-                i++;
-            
-            }
-        </script>
-    </body>
+        </tbody>
+    </table>
+    <script src='index.js'>
+
+    </script>
+</body>
+
 </html>
 <!-- /**
     element level
@@ -83,5 +75,3 @@ priority=> inline, id, class(using !important) -->
     }
 button-> blue=>same css
  -->
-
-

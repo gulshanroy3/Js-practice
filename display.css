@@ -1,0 +1,44 @@
+.parent{
+    background-color: turquoise;
+    /* border: 1px solid ; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.parent .box{
+    background-color: yellow;
+    border: 1px solid ;
+    height: 40px;
+    width:40px;
+}
+.parent .big-box{
+    background-color: yellow;
+    border: 1px solid ;
+    height: 40px;
+    /* width:400px; */
+    /* width: 100%; */
+}
+.small-box-parent{
+    margin-top: 12px;
+    display: flex;
+}
+.small-box-parent .small-box{
+    background-color: yellow;
+    border: 1px solid ;
+    height: 40px;
+    /* width:400px; */
+    width: 50%;
+}
+/* display ->none, block, flex
+*/
+/* flex- 1d  
+grid- 2d
+*/
+/*box1
+box2box3
+margin, margin-top, margin-right, margin-bottom, margin-left
+
+padding
+.position- static, relative, abs, fixed, sticky
+*/
