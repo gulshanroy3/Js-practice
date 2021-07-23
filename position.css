@@ -1,0 +1,50 @@
+.parent{
+    position: relative;
+    background-color: tomato;
+    height: 500px;
+    margin-top: 10px;
+    width:200px;
+    display: flex;
+    margin-left: 10px;
+}
+.parent .box{
+    background-color:turquoise;
+    height: 50px;
+    width: 50px;
+    /* position: absolute;  */
+    bottom: 10px;
+    right:10px;
+    margin-right:10px;
+    margin-top:10px;
+
+}
+.parent .box1{
+    background-color:turquoise;
+    height: 50px;
+    width: 50px;
+    /* position: absolute; */
+    bottom: 10px;
+    /* left:60px; */
+    right:70px;
+    margin-top:10px;
+}
+.parent .content{
+    /* height: 600px; */
+    padding: 12px;
+    overflow:scroll;
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color:whitesmoke;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+/*
+left,right, top, bottom
+*/
+/*
+overflow:scroll,auto
+*/

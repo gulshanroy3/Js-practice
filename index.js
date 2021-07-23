@@ -31,3 +31,4 @@ function onInputChange(value) {
 
 //debounce-> last input next input difference x time dont call function
 //throttle-> difference btw last work and next work should be x ms.
+
