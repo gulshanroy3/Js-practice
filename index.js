@@ -32,3 +32,40 @@ function onInputChange(value) {
 //debounce-> last input next input difference x time dont call function
 //throttle-> difference btw last work and next work should be x ms.
 
+/**
+ * single threaded
+ *  callstack, web api's, callback queue, ms queue, event loop
+ * cb1,cb2,cb3,cb4
+ * 
+ */
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => printjson(json))
+
+function printjson(json) {
+    console.log(json)
+}
+setTimeout(() => console.log("settimeout"), 2000)
+
+function test() {
+    let i = 1;
+    function y() {
+        console.log(i)
+    }
+    y()
+}
+test()
+
+function callBackBlock() {
+    let date = new Date().getTime()
+    let newDAte = date + 5000
+    while (new Date().getTime() < newDAte) {
+
+    }
+    console.log('while loop completed')
+}
+
+callBackBlock()
+
+console.log("ye wala json")
+

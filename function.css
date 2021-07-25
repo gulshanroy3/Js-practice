@@ -1,0 +1,5 @@
+.pointer-events{
+    pointer-events: none;
+    background-color: grey;
+    cursor: not-allowed;
+}
