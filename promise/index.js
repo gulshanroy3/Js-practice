@@ -77,3 +77,60 @@ async function main() {
 }
 main()
 //async=>return promise=>you can get data to do some stuff in function
+
+///sum(9)(8)(7).....()
+/**
+ * let x=sum(9)
+ * x(8)
+ */
+
+// function sum(a) {
+//     let s = 0
+//     s = s + a
+//     return function (b) {
+//         s = s + b;
+//         return function (b) {
+//             s = s + b;
+//             return s
+//         }
+//     }
+// }
+
+// let x = sum(9)
+// console.log(x)
+// console.log(sum(9)(8)(7)(6))
+
+
+function sum(a) {
+    let target = a;
+    return function inner(b) {
+        if (b) {
+            target += b;
+            return inner;
+        }
+        return target;
+    }
+}
+
+console.log(sum)
+
+function xyx(cb) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("1")
+            cb("1")
+        }, 3000)
+    })
+    // fetch('https://jsonplaceholder.typicode.com/todos').then(res => res.json()).
+    //     then(data => cb(data))
+}
+
+function xx() {
+    xyx(cc)
+    console.log("mm")
+}
+function cc(data) {
+    //do anything with data
+    console.log(data)
+}
+xx()
