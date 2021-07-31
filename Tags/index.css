@@ -5,3 +5,10 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+/*
+width->px, rem, em
+height->vh
+min-width, max-width
+calc(100vw - 20%)
+*/
